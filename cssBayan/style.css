@@ -1,0 +1,93 @@
+*,
+input,
+label {
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    font-size: 0;
+    line-height: 0;
+}
+
+body {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+input {
+    appearance: none;
+    height: 0;
+    width: 0;
+}
+
+.container {
+    max-width: 1220px;
+    padding: 10px;
+    margin: auto;
+}
+
+img {
+    max-width: 40%;
+    display: none;
+    height: 100%;
+}
+
+.row-content {
+    display: flex;
+}
+
+input:checked img {
+    display: none;
+}
+
+.title-text {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    display: inline-block;
+    width: 70%;
+
+}
+
+.fa-plus {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+}
+
+input[type="radio"]:checked~img {
+    display: block;
+    margin: 0 auto;
+}
+
+.accordion__item {
+    border-bottom: 1px solid red;
+}
+
+input:not(:checked):hover~img {
+    display: block;
+    margin: 0 auto;
+    animation: shows 2s;
+}
+
+@keyframes shows {
+
+    from {
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        opacity: 1;
+
+    }
+
+}
