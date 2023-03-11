@@ -103,6 +103,10 @@ input[type="radio"]:checked~.fa-plus {
         width: calc(100% - 2rem);
     }
 
+    .container {
+        max-width: 100%;
+    }
+
     .fa-plus {
         font-size: 2rem;
     }
@@ -114,18 +118,20 @@ input[type="radio"]:checked~.fa-plus {
 
 }
 
+
 @media (min-width: 1024px) {
     .title {
         cursor: pointer;
     }
 
     .container {
-        max-width: 70%;
+        max-width: 95%;
     }
 
     input:not(:checked):hover~img {
 
         width: 80%;
+        padding-bottom: 2%;
         animation: shows 3s;
     }
 
@@ -187,4 +193,17 @@ input[type="radio"]:checked~.fa-plus {
     .accordion:hover input[type="radio"]:not(:checked)~.title-text {
         color: #3E474F;
     }
+}
+
+@media (min-width: 1440px) {
+
+
+    .container {
+        max-width: 70%;
+    }
+
+
+
+
+
 }
