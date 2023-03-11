@@ -29,15 +29,11 @@ input {
 }
 
 .container {
-    max-width: 1020px;
-    padding: 10px;
+    max-width: 100%;
+    padding: 2%;
     margin: auto;
 }
 
-
-.row-content {
-    display: flex;
-}
 
 
 .title-text {
@@ -52,7 +48,6 @@ input {
 
 .fa-plus {
     font-size: 1.2rem;
-    font-weight: 400;
     line-height: 1.5rem;
     display: inline-block;
     text-align: right;
@@ -92,7 +87,7 @@ input[type="radio"]:checked~.fa-plus {
 
 
 .heading {
-    margin-bottom: 10px;
+    margin-bottom: 2%;
     font-size: 1.5rem;
 }
 
@@ -122,6 +117,10 @@ input[type="radio"]:checked~.fa-plus {
 @media (min-width: 1024px) {
     .title {
         cursor: pointer;
+    }
+
+    .container {
+        max-width: 70%;
     }
 
     input:not(:checked):hover~img {
